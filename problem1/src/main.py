@@ -68,5 +68,3 @@ if __name__ == "__main__":
       
     new_filename = os.path.join("./test/", new_filename)
     write_csv(new_filename, data)
-
-

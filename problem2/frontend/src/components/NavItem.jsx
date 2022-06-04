@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const NavItem = (props) => { 
-  const { icon, label, path } = props;
+  const { label, path } = props;
 
 	const location = useLocation();
 
