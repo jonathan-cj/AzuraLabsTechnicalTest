@@ -48,6 +48,8 @@ if __name__ == "__main__":
   if not filename.endswith(".csv"):
     filename += ".csv"
 
+  filename = os.path.join("./test/", filename)
+
   # Check file exist
   if not os.path.isfile(filename):
     print("File tidak ditemukan")
@@ -63,6 +65,8 @@ if __name__ == "__main__":
   if new_filename:
     if not new_filename.endswith(".csv"):
       new_filename += ".csv"
+      
+    new_filename = os.path.join("./test/", new_filename)
     write_csv(new_filename, data)
 
 
