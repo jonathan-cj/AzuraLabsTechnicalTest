@@ -35,15 +35,16 @@ const Home = (props) => {
       <div className="flex-grow mt-6 relative">
         <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-row">
           <List 
-            curItem={curItem}
+            setItems={setItems}
             items={items}
             setCurItem={setCurItem}
+            curItem={curItem}
           />
 
           <ItemDetail
             curItem={curItem}
-            setCurMenu={setCurItem}
-            setMenus={setItems}
+            setCurItem={setCurItem}
+            setItems={setItems}
             updateItemList={updateItemList}
           />
         </div>

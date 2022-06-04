@@ -33,6 +33,7 @@ const MenuEdit = (props) => {
             className="w-full p-1 border-2 rounded-md text-subtitle font-semibold"
             onChange={(e) => setDesc(e.target.value)}
             rows={5}
+            value={desc}
           >
           </textarea>
       </div>

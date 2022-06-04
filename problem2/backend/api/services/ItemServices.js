@@ -16,17 +16,17 @@ module.exports = {
     return items;
   },
 
-  createItem: async (name, qty, description) => {
+  createItem: async (name, quantity, description) => {
     var item = await Item.create({
-      name, qty, description
+      name, quantity, description
     });
 
     return item;
   },
 
-  updateItem: async (id, name, qty, description) => {
+  updateItem: async (id, name, quantity, description) => {
     await Item.update({
-      name, qty, description
+      name, quantity, description
     }, {
       where: {
         id: id

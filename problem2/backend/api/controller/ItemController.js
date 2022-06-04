@@ -15,9 +15,9 @@ module.exports = {
 
   createNewItem: async (req, res) => {
     try {
-      const { name, qty, description } = req.body;
+      const { name, quantity, description } = req.body;
 
-      const item = await ItemServices.createItem(name, qty, description);
+      const item = await ItemServices.createItem(name, quantity, description);
       res.status(200).send(item);
     } catch (error) {
       res.status(500).send(error);
@@ -26,9 +26,9 @@ module.exports = {
 
   updateItem: async (req, res) => {
     try {
-      const { id, name, qty, description } = req.body;
+      const { id, name, quantity, description } = req.body;
 
-      const item = await ItemServices.updateItem(id, name, qty, description);
+      const item = await ItemServices.updateItem(id, name, quantity, description);
       res.status(200).send(item);
     } catch (error) {
       res.status(500).send(error);

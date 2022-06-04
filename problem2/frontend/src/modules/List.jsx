@@ -7,13 +7,15 @@ import Modal from '../components/Modal';
 import ItemEdit from '../components/ItemEdit';
 
 const List = (props) => {
-  const { curItem, items, setCurItem } = props;
+  const { curItem, items, setItems, setCurItem } = props;
 
   const [addModal, setAddModal] = useState(false);
 
   const handleAddBtn = async (_, name, qty, desc) => {
     var res = await createItem(name, qty, desc);
     console.log(res);
+
+    setItems([...items, res]);
   }
 
   return (
