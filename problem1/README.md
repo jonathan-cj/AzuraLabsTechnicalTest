@@ -1,5 +1,5 @@
 # Problem 1: Sort Data
-This is program for sort data according to the given order. Data will be sorted by following priority: 
+This program is for sorting data according to the given order. Data will be sorted by following priority: 
 * column "Harga" in ascending order,
 * column "Rating" in descending order,
 * column "Likes" in descending order. 
